@@ -1,0 +1,9 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =7
+let g:netrw_dirhist_1='/var/log/gdm'
+let g:netrw_dirhist_2='/home/dzyubspirit/.config/i3'
+let g:netrw_dirhist_3='/home/dzyubspirit'
+let g:netrw_dirhist_4='/home/dzyubspirit/.config'
+let g:netrw_dirhist_5='/home/dzyubspirit/.config/i3'
+let g:netrw_dirhist_6='/home/dzyubspirit/dotfiles'
+let g:netrw_dirhist_7='/home/dzyubspirit/dotfiles/.config/i3'
