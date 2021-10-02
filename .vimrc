@@ -23,19 +23,12 @@ call plug#begin('~/.vim/plugged')
   Plug 'lyokha/vim-xkbswitch'
 call plug#end()
 
-set backupdir=~/.vim/backup/
-set directory=~/.vim/backup/
-
-set clipboard=unnamed
-
 " color scheme
 syntax on
-set termguicolors
 " colorscheme monokai
 " this option should  be before colorscheme
 let g:gruvbox_italic=1
 colorscheme gruvbox
-set t_Co=256
 
 function! s:SwitchPSCStyle()
   if &background == 'dark'
@@ -51,10 +44,7 @@ set background=dark
 set laststatus=2
 
 " .pl for prolog, not perl
-au BufRead,BufNewFile *.pl set filetype=prolog
-
-" jj brings you the normal mode
-:imap jj <Esc>
+" au BufRead,BufNewFile *.pl set filetype=prolog
 
 " Indentation
 set tabstop=2
@@ -63,10 +53,7 @@ set softtabstop=2
 set expandtab
 
 " Code readability
-set relativenumber
-set colorcolumn=80
-autocmd InsertEnter * :set number
-autocmd InsertLeave * :set relativenumber 
+set number relativenumber
 
 " Disable BCE
 if &term =~ '256color'
@@ -74,9 +61,6 @@ if &term =~ '256color'
 endif
 
 set updatetime=250
-
-" NERD Tree
-map <C-n> :NERDTreeToggle<CR>
 
 " Vim jsx
 let g:jsx_ext_required = 0
